@@ -1,0 +1,150 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+
+.document-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.document-item:hover {
+  background-color: lightgray;
+}
+
+.document-panel {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.document-panel-summary {
+  display: flex;
+  flex-direction: column;
+}
+.document-panel-author {
+  display: flex;
+  flex-direction: row;
+}
+.document-panel-category {
+  display: flex;
+  flex-direction: row;
+}
+.document-panel-published {
+  display: flex;
+  flex-direction: row;
+}
+.document-panel-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.document-panel-summary-container {
+  display: none;
+}
+
+.documment-summary-element {
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 25px;
+  width: 100px;
+  text-align: center;
+}
+
+.documment-summary-element:hover {
+  background-color: lime;
+}
+
+.document-item-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.document-item-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.topics-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.topic-element {
+  margin: 0px 20px 0px 0px;
+  width: auto;
+  height: auto;
+  font-size: 12px;
+  border-radius: 4px;
+  background-color: #dddddd;
+  border: none;
+  padding: 5px;
+}
+
+.search-elements-container {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.active-topic-container {
+  display: flex;
+  border: 1px solid rebeccapurple;
+  padding: 5px;
+}
+
+.active-topic-container-x:hover {
+  cursor: pointer;
+  background-color: lime;
+}
+
+.documents-container {
+  overflow: auto;
+}
